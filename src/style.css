@@ -1,6 +1,7 @@
 :root {
   --text: #ffffff;
   --background: #000000;
+  --accent: #4ba0ff;
   --handwriting: "Architects Daughter", cursive;
 }
 
@@ -51,19 +52,40 @@ footer {
   justify-content: center;
 }
 
-.home--intro {
+.home--intro__container {
   width: 70%;
-  font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  gap: 15px;
   transition: width 1s;
 }
 
+.home--intro {
+  width: 760px;
+  font-size: 2.6rem;
+  margin: 10px 0;
+}
+
+.home--intro__sub {
+  width: 760px;
+  font-size: 1.4rem;
+}
+
 .name {
-  color: #4ba0ff;
+  text-shadow: 0 0 10px #fff, 0 0 30px var(--accent), 0 0 50px var(--accent),
+    0 0 70px var(--accent);
+}
+
+.start--button {
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.start--img {
+  height: 4rem;
 }
 
 .home--options {
@@ -87,6 +109,8 @@ footer {
   margin-left: 50px;
   font-size: 1.4rem;
   border: none;
+  text-shadow: 0 0 10px #fff, 0 0 30px var(--accent), 0 0 50px var(--accent),
+    0 0 70px var(--accent);
   cursor: pointer;
   transition: 0.2s ease-in;
 }
@@ -95,4 +119,5 @@ footer {
   color: #4ba0ff;
   padding-left: 15px;
   transition: 0.2s ease-out;
+  text-shadow: none;
 }
