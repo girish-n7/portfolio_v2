@@ -1,7 +1,7 @@
 :root {
   --text: #ffffff;
   --background: #000000;
-  --accent: #4ba0ff;
+  --accent: #fd0000;
   --handwriting: "Architects Daughter", cursive;
 }
 
@@ -9,6 +9,12 @@ body {
   width: 70%;
   margin: 0 auto;
   scroll-behavior: smooth;
+  background: radial-gradient(
+    circle,
+    rgb(15, 15, 15) 0%,
+    rgb(5, 5, 5) 25%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 * {
@@ -16,7 +22,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  background-color: var(--background);
+  background-color: transparent;
   color: var(--text);
 }
 
@@ -28,8 +34,13 @@ header {
   left: 0;
   right: 0;
   padding: 10px 20px;
-  background-color: #000000a6;
+  background: #000000a6;
   backdrop-filter: blur(2px);
+}
+
+.logo {
+  height: 3rem;
+  cursor: pointer;
 }
 
 /* footer */
@@ -39,7 +50,6 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: green;
 }
 
 /* home */
@@ -66,6 +76,7 @@ footer {
   width: 760px;
   font-size: 2.6rem;
   margin: 10px 0;
+  transition: width 1s;
 }
 
 .home--intro__sub {
@@ -74,8 +85,7 @@ footer {
 }
 
 .name {
-  text-shadow: 0 0 10px #fff, 0 0 30px var(--accent), 0 0 50px var(--accent),
-    0 0 70px var(--accent);
+  text-shadow: 0 0 10px #fff, 0 0 30px var(--accent), 0 0 50px var(--accent);
 }
 
 .start--button {
@@ -109,14 +119,13 @@ footer {
   margin-left: 50px;
   font-size: 1.4rem;
   border: none;
-  text-shadow: 0 0 10px #fff, 0 0 30px var(--accent), 0 0 50px var(--accent),
-    0 0 70px var(--accent);
   cursor: pointer;
+  text-shadow: 0 0 10px var(--accent);
   transition: 0.2s ease-in;
 }
 
 .option:hover {
-  color: #4ba0ff;
+  color: var(--accent);
   padding-left: 15px;
   transition: 0.2s ease-out;
   text-shadow: none;

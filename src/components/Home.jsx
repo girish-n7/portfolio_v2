@@ -41,7 +41,7 @@ export default function Home() {
           width: start ? "70%" : "90%",
         }}
       >
-        <p className="home--intro">
+        <p className="home--intro" style={{ width: start ? "760px" : "500px" }}>
           Hi, my name is <span className="name">Girish N.</span>
         </p>
         <p className="home--intro__sub">
@@ -50,7 +50,7 @@ export default function Home() {
         </p>
 
         <button onClick={handleStart} className="start--button">
-          <img src={start ? left : right} className="start--img" alt=""></img>
+          <img src={start ? right : left} className="start--img" alt=""></img>
         </button>
       </div>
       <div
