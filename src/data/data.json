@@ -1,98 +1,64 @@
 [
     {
         "id": "1",
-        "name": "Project 1",
-        "type": "project type",
+        "name": "Summarizer",
+        "type": "Full stack",
         "tech": "project tech",
         "desc": "Project description",
-        "img": "",
         "links": {
-            "github": "github link",
-            "live": "live link"
+            "github": "https://github.com/girish-n7/",
+            "live": "https://github.com/girish-n7/"
         }
     },
     {
         "id": "2",
-        "name": "Project 2",
-        "type": "project type",
+        "name": "Chatbot",
+        "type": "Full stack",
         "tech": "project tech",
         "desc": "Project description",
-        "img": "",
         "links": {
-            "github": "github link",
-            "live": "live link"
+            "github": "https://github.com/girish-n7/",
+            "live": "https://github.com/girish-n7/"
         }
     },
     {
         "id": "3",
-        "name": "Project 3",
-        "type": "project type",
+        "name": "e-commerce website",
+        "type": "Full stack",
         "tech": "project tech",
         "desc": "Project description",
-        "img": "",
         "links": {
-            "github": "github link",
-            "live": "live link"
+            "github": "https://github.com/girish-n7/",
+            "live": "https://github.com/girish-n7/"
         }
     },
     {
         "id": "4",
-        "name": "Project 4",
-        "type": "project type",
+        "name": "Portfolio",
+        "type": "Frontend",
         "tech": "project tech",
         "desc": "Project description",
-        "img": "",
         "links": {
-            "github": "github link",
-            "live": "live link"
+            "github": "https://github.com/girish-n7/",
+            "live": "https://github.com/girish-n7/"
         }
     },
     {
         "id": "5",
-        "name": "Project 5",
-        "type": "project type",
+        "name": "Quiz mobile",
+        "type": "Full stack",
         "tech": "project tech",
         "desc": "Project description",
-        "img": "",
         "links": {
-            "github": "github link",
-            "live": "live link"
+            "github": "https://github.com/girish-n7/",
+            "live": "https://github.com/girish-n7/"
         }
     },
     {
         "id": "6",
-        "name": "Project 6",
-        "type": "project type",
+        "name": "Contact API",
+        "type": "Backend",
         "tech": "project tech",
-        "desc": "Project description",
-        "img": "",
-        "links": {
-            "github": "github link",
-            "live": "live link"
-        }
-    },
-    {
-        "id": "7",
-        "name": "Project 7",
-        "type": "project type",
-        "tech": "project tech",
-        "desc": "Project description",
-        "img": "",
-        "links": {
-            "github": "github link",
-            "live": "live link"
-        }
-    },
-    {
-        "id": "8",
-        "name": "Project 8",
-        "type": "project type",
-        "tech": "project tech",
-        "desc": "Project description",
-        "img": "",
-        "links": {
-            "github": "github link",
-            "live": "live link"
-        }
+        "desc": "Project description"
     }
 ]
