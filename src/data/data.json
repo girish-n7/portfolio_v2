@@ -2,65 +2,97 @@
     {
         "id": "1",
         "name": "Project 1",
-        "type": "",
+        "type": "project type",
+        "tech": "project tech",
+        "desc": "Project description",
         "img": "",
-        "github": "",
-        "live": ""
+        "links": {
+            "github": "github link",
+            "live": "live link"
+        }
     },
     {
         "id": "2",
         "name": "Project 2",
-        "type": "",
+        "type": "project type",
+        "tech": "project tech",
+        "desc": "Project description",
         "img": "",
-        "github": "",
-        "live": ""
+        "links": {
+            "github": "github link",
+            "live": "live link"
+        }
     },
     {
         "id": "3",
         "name": "Project 3",
-        "type": "",
+        "type": "project type",
+        "tech": "project tech",
+        "desc": "Project description",
         "img": "",
-        "github": "",
-        "live": ""
+        "links": {
+            "github": "github link",
+            "live": "live link"
+        }
     },
     {
         "id": "4",
         "name": "Project 4",
-        "type": "",
+        "type": "project type",
+        "tech": "project tech",
+        "desc": "Project description",
         "img": "",
-        "github": "",
-        "live": ""
+        "links": {
+            "github": "github link",
+            "live": "live link"
+        }
     },
     {
         "id": "5",
         "name": "Project 5",
-        "type": "",
+        "type": "project type",
+        "tech": "project tech",
+        "desc": "Project description",
         "img": "",
-        "github": "",
-        "live": ""
+        "links": {
+            "github": "github link",
+            "live": "live link"
+        }
     },
     {
         "id": "6",
         "name": "Project 6",
-        "type": "",
+        "type": "project type",
+        "tech": "project tech",
+        "desc": "Project description",
         "img": "",
-        "github": "",
-        "live": ""
+        "links": {
+            "github": "github link",
+            "live": "live link"
+        }
     },
     {
         "id": "7",
         "name": "Project 7",
-        "type": "",
+        "type": "project type",
+        "tech": "project tech",
+        "desc": "Project description",
         "img": "",
-        "github": "",
-        "live": ""
+        "links": {
+            "github": "github link",
+            "live": "live link"
+        }
     },
     {
         "id": "8",
         "name": "Project 8",
-        "type": "",
+        "type": "project type",
+        "tech": "project tech",
+        "desc": "Project description",
         "img": "",
-        "github": "",
-        "live": ""
+        "links": {
+            "github": "github link",
+            "live": "live link"
+        }
     }
 ]
