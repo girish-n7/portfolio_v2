@@ -41,7 +41,13 @@ export default function Home() {
           width: start ? "70%" : "90%",
         }}
       >
-        <p className="home--intro" style={{ width: start ? "760px" : "500px" }}>
+        <p
+          className="home--intro"
+          style={{
+            width: start ? "760px" : "650px",
+            fontSize: start ? "2.6rem" : "3.4rem",
+          }}
+        >
           Hi, my name is <span className="name">Girish N.</span>
         </p>
         <p className="home--intro__sub">
