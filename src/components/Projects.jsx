@@ -6,13 +6,9 @@ import back from "../assets/back.svg";
 
 export default function Projects() {
   let navigate = useNavigate();
-  //map the data contents into individual cards
-  let projectMap = data.map((item) => {
-    return <ProjectCard key={item.id} data={item} />;
-  });
 
   //manage state for filter
-  let [filter, setFilter] = useState("All");
+  let [projectFilter, setProjectFilter] = useState("All");
 
   //create array for filter
   let filterArr = ["All", "Full stack", "Frontend only", "Backend only"];
@@ -22,12 +18,24 @@ export default function Projects() {
     return (
       <p
         key={item}
-        className={`filter ${filter === item ? "active" : ""}`}
-        onClick={() => setFilter(item)}
+        className={`filter ${projectFilter === item ? "active" : ""}`}
+        onClick={() => setProjectFilter(item)}
       >
         {item}
       </p>
     );
+  });
+
+  //filter data based on user selection
+  //use ternary operation to set data if "all" seleted or filter if other filter is selected
+  let dataArr =
+    projectFilter === "All"
+      ? data
+      : data.filter((item) => item.type === projectFilter);
+
+  //map the data contents into individual cards
+  let projectMap = dataArr.map((item) => {
+    return <ProjectCard key={item.id} data={item} />;
   });
 
   return (

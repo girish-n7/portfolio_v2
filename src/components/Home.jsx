@@ -44,7 +44,7 @@ export default function Home() {
         <p
           className="home--intro"
           style={{
-            width: start ? "760px" : "650px",
+            width: start ? "760px" : "670px",
             fontSize: start ? "2.6rem" : "3.4rem",
           }}
         >

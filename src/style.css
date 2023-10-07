@@ -2,7 +2,8 @@
   --text: #ffffff;
   --background: #000000;
   --accent: #fd0000;
-  --handwriting: "Architects Daughter", cursive;
+  --head: "Cinzel", serif;
+  --sub: "Quattrocento", serif;
 }
 
 html {
@@ -24,11 +25,10 @@ body {
 }
 
 * {
+  font-family: var(--sub);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  font-family: var(--handwriting);
   background-color: transparent;
   color: var(--text);
 }
@@ -80,17 +80,20 @@ footer {
 }
 
 .home--intro {
+  font-family: var(--head);
   width: 760px;
   margin: 10px 0;
   transition: width 1s, font-size 1s;
 }
 
 .home--intro__sub {
+  font-family: var(--sub);
   width: 760px;
   font-size: 1.4rem;
 }
 
 .name {
+  font-family: var(--head);
   text-shadow: 0 0 10px #fff, 0 0 30px var(--accent), 0 0 50px var(--accent);
 }
 
@@ -120,10 +123,10 @@ footer {
 
 .option {
   font-family: var(--handwriting);
+  font-size: 1.4rem;
   width: fit-content;
   margin: 10px;
   margin-left: 50px;
-  font-size: 1.4rem;
   border: none;
   cursor: pointer;
   text-shadow: 0 0 10px var(--accent);
@@ -197,6 +200,7 @@ footer {
 }
 
 .project--title {
+  font-family: var(--head);
   font-size: 1.4rem;
   margin: 5px 0;
 }
@@ -207,6 +211,7 @@ footer {
 }
 
 .project--tech {
+  font-family: var(--sub);
   font-size: 1rem;
   margin: 5px 0 10px 10px;
 }
@@ -222,6 +227,7 @@ footer {
 
 .link {
   font-size: 0.9rem;
+  text-transform: uppercase;
   margin: 10px;
   padding: 8px 16px;
   border: none;

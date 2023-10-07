@@ -35,7 +35,7 @@
     {
         "id": "4",
         "name": "Portfolio",
-        "type": "Frontend",
+        "type": "Frontend only",
         "tech": "project tech",
         "desc": "Project description",
         "links": {
@@ -57,7 +57,7 @@
     {
         "id": "6",
         "name": "Contact API",
-        "type": "Backend",
+        "type": "Backend only",
         "tech": "project tech",
         "desc": "Project description"
     }
