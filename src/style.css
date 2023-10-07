@@ -40,7 +40,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding: 10px 20px;
+  padding: 10px 30px;
   background: #000000a6;
   backdrop-filter: blur(2px);
 }
@@ -94,7 +94,7 @@ footer {
 
 .name {
   font-family: var(--head);
-  text-shadow: 0 0 10px #fff, 0 0 30px var(--accent), 0 0 50px var(--accent);
+  text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
 }
 
 .start--button {
@@ -237,6 +237,52 @@ footer {
 }
 
 .link:hover,
-.filter:hover {
+.filter:hover,
+.send:hover {
   box-shadow: 0 0 4px 1px var(--accent);
+}
+
+/* contact */
+
+.contact--container {
+  height: fit-content;
+  width: 400px;
+  margin: 50px auto;
+  padding: 15px 20px;
+  border: 1px var(--accent) solid;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact--title {
+  font-size: 1.2rem;
+  font-family: var(--head);
+}
+
+.input {
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #484c48;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  transition: 0.5s;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid var(--accent);
+  transition: 0.2s;
+}
+
+.send {
+  font-size: 1rem;
+  margin-top: 20px;
+  padding: 8px 16px;
+  outline: 1px solid var(--accent);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
