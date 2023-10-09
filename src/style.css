@@ -26,6 +26,10 @@ body {
   color: var(--text);
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -103,11 +107,12 @@ footer {
 }
 
 .toTop {
+  font-size: 0.9rem;
   font-weight: 700;
   border-radius: 2rem;
   color: var(--background);
   background-color: var(--text);
-  padding: 8px 12px;
+  padding: 8px 16px;
 }
 
 form {
@@ -115,13 +120,20 @@ form {
 }
 
 .about--container,
-.contact--container {
+.contact--container,
+.resume--container {
   width: 100%;
   background-color: var(--card);
   margin-bottom: 16px;
   padding: 8px 12px;
   border: 1px solid var(--border);
   border-radius: 4px;
+}
+
+.about--hr {
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid var(--borderHover);
 }
 
 .contact--head {
@@ -149,10 +161,30 @@ form {
 }
 
 .contact--send {
+  width: 100%;
   font-weight: 700;
+  margin-top: 8px;
   padding: 8px;
   background-color: var(--primary);
   border-radius: 2rem;
+}
+
+.download--btn {
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 2rem;
+  outline: 1px solid var(--text);
+}
+
+.download {
+  height: 1.2rem;
+  margin: 0 5px;
 }
 
 /* project dropdown */

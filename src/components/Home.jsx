@@ -1,4 +1,5 @@
 import About from "./About";
+import Resume from "./Resume";
 import Contact from "./Contact";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="miscellaneous--container">
         <About />
         <Contact />
+        <Resume />
         <button className="toTop" onClick={() => window.scroll(0, 0)}>
           Back to top
         </button>
