@@ -1,16 +1,13 @@
-import logo from "../assets/portfolio-logo.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   let navigate = useNavigate();
   return (
     <header>
-      <img
-        className="logo"
-        src={logo}
-        alt="logo"
-        onClick={() => navigate("/")}
-      ></img>
+      <div className="logo--container" onClick={() => navigate("/")}>
+        <div className="logo">G</div>
+        <p className="name">Girish</p>
+      </div>
     </header>
   );
 }
