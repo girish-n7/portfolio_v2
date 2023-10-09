@@ -44,7 +44,7 @@ header {
   right: 0;
   display: flex;
   align-items: center;
-  padding: 7px 12px;
+  padding: 5px 12px;
   background: #1a1a1b;
   border-bottom: 1px solid var(--border);
 }
@@ -93,18 +93,18 @@ footer {
 }
 
 .projects--container {
-  width: 70%;
+  width: 65%;
   height: 550px;
 }
 
-/* miscellaneous */
-
 .miscellaneous--container {
-  width: 28%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* miscellaneous */
 
 .toTop {
   font-size: 0.9rem;
@@ -177,9 +177,10 @@ form {
   justify-content: center;
   margin-top: 16px;
   padding: 8px;
+  background-color: var(--text);
+  color: var(--background);
   border: none;
   border-radius: 2rem;
-  outline: 1px solid var(--text);
 }
 
 .download {
@@ -207,4 +208,45 @@ form {
 
 .project--selector:hover {
   outline: 1px solid var(--border);
+}
+
+.project--option {
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
+
+/* search */
+
+.search {
+  width: 38%;
+  height: 2.4rem;
+  margin: 0 7px;
+  border-radius: 2rem;
+  border: none;
+  outline: 1px solid var(--border);
+  background-color: #272729;
+  cursor: pointer;
+}
+
+.search:hover {
+  background-color: var(--card);
+  outline: 1px solid var(--borderHover);
+}
+
+/* social */
+
+.social--container {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.social {
+  height: 1.2rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.social:hover {
+  filter: brightness(1.2);
 }

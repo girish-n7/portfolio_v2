@@ -13,7 +13,11 @@ export default function ProjectSelector({ userSelection, updateSelection }) {
 
   //map the project data into options
   let optionsMap = optionsArr.map((item) => {
-    return <option key={item}>{item}</option>;
+    return (
+      <option key={item} className="project--option">
+        {item}
+      </option>
+    );
   });
 
   return (

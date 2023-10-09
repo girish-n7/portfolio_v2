@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProjectSelector from "./ProjectSelector";
-import { useState } from "react";
+import Social from "./Social";
 
 export default function Header() {
   let navigate = useNavigate();
@@ -23,6 +24,8 @@ export default function Header() {
         userSelection={userSelection}
         updateSelection={updateSelection}
       />
+      <div className="search"></div>
+      <Social />
     </header>
   );
 }
