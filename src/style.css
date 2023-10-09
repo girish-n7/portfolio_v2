@@ -5,6 +5,7 @@
   --font: "IBM Plex Sans", sans-serif;
   --card: #1a1a1b;
   --border: #343536;
+  --borderHover: #b9babc;
 }
 
 html {
@@ -37,6 +38,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
+  align-items: center;
   padding: 7px 12px;
   background: #1a1a1b;
   border-bottom: 1px solid var(--border);
@@ -135,9 +138,14 @@ form {
 
 .contact--input {
   border: 1px solid var(--border);
+  outline: none;
   border-radius: 4px;
   padding: 8px 12px;
   margin-bottom: 8px;
+}
+
+.contact--input:focus {
+  border: 1px solid var(--borderHover);
 }
 
 .contact--send {
@@ -145,4 +153,26 @@ form {
   padding: 8px;
   background-color: var(--primary);
   border-radius: 2rem;
+}
+
+/* project dropdown */
+
+.project--dropdown {
+  width: 270px;
+  margin: 0 10px;
+}
+
+.project--selector {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: var(--card);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.project--selector:hover {
+  outline: 1px solid var(--border);
 }
