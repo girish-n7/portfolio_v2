@@ -10,7 +10,7 @@ export default function Social() {
         className="social"
         src={github}
         alt="github"
-        style={{ height: "1.4rem" }}
+        style={{ height: "1.2rem" }}
       ></img>
       <img className="social" src={mail} alt="mail"></img>
     </div>

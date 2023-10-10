@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 
-export default function ProjectSelector({ userSelection, updateSelection }) {
+export default function ProjectSelector({ selectedProject, updateProject }) {
   //create an array for options
   let optionsArr = [
-    "Home",
+    "All",
     "Summarizer",
     "Chatbot",
     "Quiz",
@@ -14,7 +14,7 @@ export default function ProjectSelector({ userSelection, updateSelection }) {
   //map the project data into options
   let optionsMap = optionsArr.map((item) => {
     return (
-      <option key={item} className="project--option">
+      <option key={item} value={item} className="project--option">
         {item}
       </option>
     );
@@ -24,8 +24,8 @@ export default function ProjectSelector({ userSelection, updateSelection }) {
     <div className="project--dropdown">
       <select
         className="project--selector"
-        value={userSelection}
-        onChange={(event) => updateSelection(event.target.value)}
+        value={selectedProject}
+        onChange={(event) => updateProject(event.target.value)}
       >
         {optionsMap}
       </select>

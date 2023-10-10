@@ -2,16 +2,25 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProjectSelector from "./ProjectSelector";
 import Social from "./Social";
+import Menu from "./Menu";
 
 export default function Header() {
   let navigate = useNavigate();
 
   //manage state for project dropdown
-  let [userSelection, setSelection] = useState("Home");
+  let [selectedProject, setProject] = useState("All");
 
-  //handle selection change
-  function updateSelection(option) {
-    setSelection(option);
+  //manage state for menu
+  let [selectedMenu, setMenu] = useState("Home");
+
+  //handle project selection
+  function updateProject(option) {
+    setProject(option);
+  }
+
+  //handle menu selection
+  function updateMenu(option) {
+    setMenu(option);
   }
 
   return (
@@ -21,11 +30,12 @@ export default function Header() {
         <p className="name">Girish</p>
       </div>
       <ProjectSelector
-        userSelection={userSelection}
-        updateSelection={updateSelection}
+        selectedProject={selectedProject}
+        updateProject={updateProject}
       />
       <div className="search"></div>
       <Social />
+      <Menu selectedMenu={selectedMenu} updateMenu={updateMenu} />
     </header>
   );
 }

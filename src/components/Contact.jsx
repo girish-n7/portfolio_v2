@@ -12,7 +12,6 @@ export default function Contact() {
           className="contact--input"
           name="contactName"
           placeholder="Name"
-          autoFocus
           required
           autoComplete="false"
         ></input>
@@ -29,7 +28,7 @@ export default function Contact() {
           type="text"
           className="contact--input"
           name="contactSubject"
-          placeholder="Message Subject"
+          placeholder="Subject"
           required
           autoComplete="false"
         ></input>
@@ -38,7 +37,7 @@ export default function Contact() {
           type="text"
           className="contact--input"
           name="contactMessage"
-          placeholder="Message"
+          placeholder="Type your message here"
           required
           autoComplete="false"
         ></textarea>
