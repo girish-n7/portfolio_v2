@@ -3,62 +3,65 @@
         "id": "1",
         "name": "Summarizer",
         "type": "Full stack",
-        "tech": "project tech",
-        "desc": "Project description",
+        "tech": "React, HTML, CSS, Javascript, Express, Github pages, Vercel",
+        "api": "A reliable backend service to support the summarizer project, enabling efficient processing of content and delivering concise and coherent summaries. Hosted on Vercel.",
+        "desc": "A user-friendly and responsive web application that efficiently condenses lengthy content into concise summaries, enhancing information accessibility and user convenience.",
         "links": {
-            "github": "https://github.com/girish-n7/",
-            "live": "https://github.com/girish-n7/"
+            "github": "https://github.com/girish-n7/summarizer",
+            "live": "https://girish-n7.github.io/summarizer"
         }
     },
     {
         "id": "2",
         "name": "Chatbot",
         "type": "Full stack",
-        "tech": "project tech",
-        "desc": "Project description",
+        "api": "A sophisticated backend service to power the AI chatbot, facilitating natural and engaging conversations while managing data seamlessly. Hosted on Vercel.",
+        "tech": "React, OpenAI API, HTML, CSS, Javascript, Express, Github Pages, Vercel",
+        "desc": "An AI chatbot infused with the distinctive speech style of Batman, creating a unique and immersive conversational experience.",
         "links": {
-            "github": "https://github.com/girish-n7/",
-            "live": "https://github.com/girish-n7/"
+            "github": "https://github.com/girish-n7/chatbot",
+            "live": "https://girish-n7.github.io/chatbot"
         }
     },
     {
         "id": "3",
         "name": "e-commerce website",
         "type": "Full stack",
-        "tech": "project tech",
-        "desc": "Project description",
+        "tech": "React, HTML, CSS, Javascript, Express, Github pages, Vercel",
+        "api": "A backend service to fetch items, search by product id and serve products by category",
+        "desc": "An e-commerce website where users can explore items, shop by category, add/ remove items from wishlist and a cart service that users can checkout to get a cart summary",
         "links": {
-            "github": "https://github.com/girish-n7/",
-            "live": "https://github.com/girish-n7/"
+            "github": "https://github.com/girish-n7/e-commerce",
+            "live": "https://girish-n7.github.io/e-commerce"
         }
     },
     {
         "id": "4",
         "name": "Portfolio",
         "type": "Frontend only",
-        "tech": "project tech",
-        "desc": "Project description",
+        "tech": "React, HTML, CSS, Javascript, Github pages",
+        "desc": "A standout portfolio project showcasing my skills in web development, featuring interactive and responsive designs, seamless navigation, and a seamless blend of front-end and back-end technologies.",
         "links": {
-            "github": "https://github.com/girish-n7/",
-            "live": "https://github.com/girish-n7/"
+            "github": "https://github.com/girish-n7/portfolio",
+            "live": "https://girish-n7.github.io/portfolio"
         }
     },
     {
         "id": "5",
         "name": "Quiz mobile",
         "type": "Full stack",
-        "tech": "project tech",
+        "tech": "React Native, Javascript, Express, MongoDB, Vercel",
         "desc": "Project description",
         "links": {
-            "github": "https://github.com/girish-n7/",
-            "live": "https://github.com/girish-n7/"
+            "github": "https://github.com/girish-n7/quiz",
+            "live": "https://github.com/girish-n7/quiz"
         }
     },
     {
         "id": "6",
         "name": "Contact API",
         "type": "Backend only",
-        "tech": "project tech",
-        "desc": "Project description"
+        "tech": "Express, NodeJS, Vercel, MongoDB",
+        "desc": "A versatile API catering to contact forms across my personal projects, seamlessly writing data to a private database for real-time monitoring of new entries."
     }
 ]
