@@ -1,9 +1,14 @@
 /* eslint-disable react/prop-types */
 
-// import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import arrow from "../assets/up.svg";
 
 export default function Menu({ selectedMenu, updateMenu }) {
-  //   let navigate = useNavigate();
+  let navigate = useNavigate();
+
+  //manage state for menu div
+  let [menuDiv, setMenuDiv] = useState(false);
 
   //create menu array
   let menuArr = [
@@ -14,21 +19,37 @@ export default function Menu({ selectedMenu, updateMenu }) {
   //map the array into options
   let menuMap = menuArr.map((item) => {
     return (
-      <option key={item.title} value={item} className="menu--option">
+      <p
+        key={item.title}
+        className="project--option"
+        onClick={() => {
+          setMenuDiv((prevState) => !prevState);
+          updateMenu(item.title);
+          navigate(`${item.route}`);
+        }}
+      >
         {item.title}
-      </option>
+      </p>
     );
   });
 
+  //reuse styles from project dropdown
+
   return (
-    <div className="menu--dropdown">
-      <select
-        className="menu--selector"
-        value={selectedMenu}
-        onChange={(event) => updateMenu(event.target.value.title)}
-      >
-        {menuMap}
-      </select>
+    <div className="project--dropdown">
+      <p className="project--selector">
+        {selectedMenu}
+        <img
+          className="arrow"
+          src={arrow}
+          style={{
+            transform: `${menuDiv ? "rotate(0deg)" : "rotate(180deg)"}`,
+          }}
+          onClick={() => setMenuDiv((prevState) => !prevState)}
+          alt="arrow"
+        ></img>
+      </p>
+      {menuDiv && <div className="project--options__container">{menuMap}</div>}
     </div>
   );
 }

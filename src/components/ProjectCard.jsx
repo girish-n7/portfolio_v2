@@ -3,6 +3,7 @@ import summarizer from "../assets/summarizer_live.png";
 import chatbot from "../assets/chatbot_live.png";
 import portfolio from "../assets/portfolio_live.png";
 import eCommerce from "../assets/e-commerce_live.png";
+import quiz from "../assets/splash.png";
 import link from "../assets/link.svg";
 import live from "../assets/live.svg";
 
@@ -14,7 +15,9 @@ export default function ProjectCard({ data }) {
       ? chatbot
       : data.name === "e-commerce website"
       ? eCommerce
-      : portfolio;
+      : data.name === "Portfolio"
+      ? portfolio
+      : quiz;
   return (
     <div className="project--card">
       <div className="project--head">
@@ -28,7 +31,7 @@ export default function ProjectCard({ data }) {
         <p className="project--desc">{data.desc}</p>
         {data.api && (
           <p className="project--desc">
-            <strong>Backend service:</strong> {data.api}
+            <strong>Backend API:</strong> {data.api}
           </p>
         )}
         {data.links && (
