@@ -1,11 +1,12 @@
 import About from "./About";
 import Resume from "./Resume";
 import Contact from "./Contact";
+import Projects from "./Projects";
 
 export default function Home() {
   return (
     <div className="home--container">
-      <div className="projects--container"></div>
+      <Projects />
       <div className="miscellaneous--container">
         <About />
         <Contact />

@@ -15,30 +15,27 @@ export default function ProjectCard({ data }) {
       : portfolio;
   return (
     <div className="project--card">
-      {data.links && (
-        <img className="project--img" src={imgSource} alt=""></img>
-      )}
-      <div className="project--body">
-        <p className="project--title">{data.name}</p>
-        <hr className="project--hr" />
+      <div className="project--head">
         <p className="project--tech">{data.tech}</p>
+        <p className="project--title">{data.name}</p>
+      </div>
+      <img className="project--img" src={imgSource} alt="project image"></img>
+      <div className="project--body">
         <p className="project--desc">{data.desc}</p>
-        {data.links && (
-          <div className="link--container">
-            <button
-              className="link"
-              onClick={() => (window.location.href = data.links.live)}
-            >
-              View
-            </button>
-            <button
-              className="link"
-              onClick={() => (window.location.href = data.links.github)}
-            >
-              Code
-            </button>
-          </div>
-        )}
+        <div className="links--container">
+          <button
+            className="live link"
+            onClick={() => (window.location.href = `${data.links.live}`)}
+          >
+            View
+          </button>
+          <button
+            className="github link"
+            onClick={() => (window.location.href = `${data.links.github}`)}
+          >
+            Code
+          </button>
+        </div>
       </div>
     </div>
   );
