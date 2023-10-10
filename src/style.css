@@ -10,10 +10,10 @@
 
 html {
   background-color: var(--background);
+  scroll-behavior: smooth;
 }
 
 body {
-  scroll-behavior: smooth;
   background-color: var(--background);
 }
 
@@ -107,8 +107,8 @@ footer {
 /* miscellaneous */
 
 .toTop {
-  /* position: sticky;
-  bottom: 5px; */
+  position: sticky;
+  top: 93vh;
   font-size: 0.9rem;
   font-weight: 700;
   border-radius: 2rem;
