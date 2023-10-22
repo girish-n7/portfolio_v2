@@ -225,6 +225,7 @@ form {
   border: none;
   border-radius: 4px;
   outline: 1px solid var(--border);
+  overflow: hidden;
 }
 
 .project--option {

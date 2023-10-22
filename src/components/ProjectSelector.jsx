@@ -13,6 +13,7 @@ export default function ProjectSelector({ selectedProject, updateProject }) {
     "Summarizer",
     "Chatbot",
     "Quiz",
+    "Portfolio",
     "Contact API",
     "e-commerce",
   ];

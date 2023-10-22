@@ -45,7 +45,10 @@ export default function Menu({ selectedMenu, updateMenu }) {
           style={{
             transform: `${menuDiv ? "rotate(0deg)" : "rotate(180deg)"}`,
           }}
-          onClick={() => setMenuDiv((prevState) => !prevState)}
+          onClick={() => {
+            window.scroll(0, 0);
+            setMenuDiv((prevState) => !prevState);
+          }}
           alt="arrow"
         ></img>
       </p>
