@@ -36,15 +36,17 @@ export default function ProjectSelector({ selectedProject, updateProject }) {
 
   return (
     <div className="project--dropdown">
-      <p className="project--selector">
-        {selectedProject}{" "}
+      <p
+        className="project--selector"
+        onClick={() => setOptionsDiv((prevState) => !prevState)}
+      >
+        {selectedProject}
         <img
           className="arrow"
           src={arrow}
           style={{
             transform: `${optionsDiv ? "rotate(0deg)" : "rotate(180deg)"}`,
           }}
-          onClick={() => setOptionsDiv((prevState) => !prevState)}
           alt="arrow"
         ></img>
       </p>

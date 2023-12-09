@@ -37,17 +37,19 @@ export default function Menu({ selectedMenu, updateMenu }) {
 
   return (
     <div className="project--dropdown">
-      <p className="project--selector">
+      <p
+        className="project--selector"
+        onClick={() => {
+          window.scroll(0, 0);
+          setMenuDiv((prevState) => !prevState);
+        }}
+      >
         {selectedMenu}
         <img
           className="arrow"
           src={arrow}
           style={{
             transform: `${menuDiv ? "rotate(0deg)" : "rotate(180deg)"}`,
-          }}
-          onClick={() => {
-            window.scroll(0, 0);
-            setMenuDiv((prevState) => !prevState);
           }}
           alt="arrow"
         ></img>
