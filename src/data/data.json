@@ -1,6 +1,18 @@
 [
     {
         "id": "1",
+        "name": "Injury Tracker",
+        "type": "Full stack",
+        "tech": "React, HTML, CSS, Javascript, Express, MongoDB, Auth0, Github pages, Vercel",
+        "api": "A backend service to read and write injury data into a MongoDB database.",
+        "desc": "A simple injury tracker with authentication enabled.",
+        "links": {
+            "github": "https://github.com/girish-n7/injury-tracker",
+            "live": "https://girish-n7.github.io/injury-tracker"
+        }
+    },
+    {
+        "id": "2",
         "name": "Summarizer",
         "type": "Full stack",
         "tech": "React, HTML, CSS, Javascript, Express, Github pages, Vercel",
@@ -12,7 +24,7 @@
         }
     },
     {
-        "id": "2",
+        "id": "3",
         "name": "Chatbot",
         "type": "Full stack",
         "api": "A sophisticated backend service to power the AI chatbot, facilitating natural and engaging conversations while managing data seamlessly. Hosted on Vercel.",
@@ -24,7 +36,7 @@
         }
     },
     {
-        "id": "3",
+        "id": "4",
         "name": "e-commerce website",
         "type": "Full stack",
         "tech": "React, HTML, CSS, Javascript, Express, Github pages, Vercel",
@@ -36,7 +48,7 @@
         }
     },
     {
-        "id": "4",
+        "id": "5",
         "name": "Portfolio",
         "type": "Frontend only",
         "tech": "React, HTML, CSS, Javascript, Github pages",
@@ -47,7 +59,7 @@
         }
     },
     {
-        "id": "5",
+        "id": "6",
         "name": "Quiz mobile",
         "type": "Full stack",
         "tech": "React Native, Javascript, Express, MongoDB, Vercel",
@@ -58,7 +70,7 @@
         }
     },
     {
-        "id": "6",
+        "id": "7",
         "name": "Contact API",
         "type": "Backend only",
         "tech": "Express, NodeJS, Vercel, MongoDB",

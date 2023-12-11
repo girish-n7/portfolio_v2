@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import injury from "../assets/injury_live.png";
 import summarizer from "../assets/summarizer_live.png";
 import chatbot from "../assets/chatbot_live.png";
 import portfolio from "../assets/portfolio_live.png";
@@ -9,7 +10,9 @@ import live from "../assets/live.svg";
 
 export default function ProjectCard({ data }) {
   let imgSource =
-    data.name === "Summarizer"
+    data.name === "Injury Tracker"
+      ? injury
+      : data.name === "Summarizer"
       ? summarizer
       : data.name === "Chatbot"
       ? chatbot
