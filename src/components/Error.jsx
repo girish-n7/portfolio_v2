@@ -5,14 +5,17 @@ export default function Error() {
   let navigate = useNavigate();
   return (
     <div className="error--container">
-      <div className="error--prompt">
-        <img src={errorIcon}></img>
-        <p>404. Page not found</p>
+      <img className="error--img" src={errorIcon}></img>
+      <div className="error--content">
+        <p className="error--prompt">
+          404. Page not found.
+          <br />
+          Are you sure you have entered the correct URL?
+        </p>
+        <button className="error--btn" onClick={() => navigate("/")}>
+          Back to Home
+        </button>
       </div>
-      <p>Are you sure you have entered the correct URL?</p>
-      <button className="error--btn" onClick={() => navigate("/")}>
-        Back to Home
-      </button>
     </div>
   );
 }

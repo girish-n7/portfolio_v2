@@ -353,3 +353,38 @@ form {
   background-color: var(--card);
   outline: 1px solid var(--text);
 }
+
+/* error */
+
+.error--container {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  margin: 50px auto;
+}
+
+.error--img {
+  height: 10rem;
+}
+
+.error--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.error--prompt {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.error--btn {
+  width: 10rem;
+  font-weight: 700;
+  margin-top: 8px;
+  padding: 8px;
+  background-color: var(--primary);
+  border-radius: 2rem;
+}
