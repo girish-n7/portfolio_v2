@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProjectSelector from "./ProjectSelector";
 import Social from "./Social";
 import Menu from "./Menu";
+import logo from "../assets/logo.png";
 
 export default function Header() {
   let navigate = useNavigate();
@@ -26,7 +27,7 @@ export default function Header() {
   return (
     <header>
       <div className="logo--container" onClick={() => navigate("/")}>
-        <div className="logo">G</div>
+        <img className="logo" src={logo} />
         <p className="name">Girish</p>
       </div>
       <ProjectSelector

@@ -4,7 +4,7 @@ import summarizer from "../assets/summarizer_live.png";
 import chatbot from "../assets/chatbot_live.png";
 import portfolio from "../assets/portfolio_live.png";
 import eCommerce from "../assets/e-commerce_live.png";
-import quiz from "../assets/splash.png";
+import quiz from "../assets/quiz.png";
 import link from "../assets/link.svg";
 import live from "../assets/live.svg";
 
