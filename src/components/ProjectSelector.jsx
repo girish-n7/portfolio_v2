@@ -9,7 +9,8 @@ export default function ProjectSelector({ selectedProject, updateProject }) {
 
   //create an array for options
   let optionsArr = [
-    "All",
+    "All projects",
+    "Injury tracker",
     "Summarizer",
     "Chatbot",
     "Quiz",

@@ -9,7 +9,7 @@ export default function Header() {
   let navigate = useNavigate();
 
   //manage state for project dropdown
-  let [selectedProject, setProject] = useState("All");
+  let [selectedProject, setProject] = useState("All projects");
 
   //manage state for menu
   let [selectedMenu, setMenu] = useState("Home");
