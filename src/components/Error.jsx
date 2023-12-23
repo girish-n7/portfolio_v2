@@ -13,7 +13,7 @@ export default function Error() {
           Are you sure you have entered the correct URL?
         </p>
         <button className="error--btn" onClick={() => navigate("/")}>
-          Back to Home
+          Return to homepage
         </button>
       </div>
     </div>

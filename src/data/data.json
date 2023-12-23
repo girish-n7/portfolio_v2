@@ -5,7 +5,7 @@
         "type": "Full stack",
         "tech": "React, HTML, CSS, Javascript, Express, MongoDB, Auth0, Github pages, Vercel",
         "api": "A backend service to read and write injury data into a MongoDB database.",
-        "desc": "A simple injury tracker with authentication enabled.",
+        "desc": "A simple Injury tracking web application that simplifies the process of recording, managing, and analyzing injuries and incidents.",
         "links": {
             "github": "https://github.com/girish-n7/injury-tracker",
             "live": "https://girish-n7.github.io/injury-tracker"
