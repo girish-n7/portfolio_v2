@@ -20,7 +20,8 @@ export default function ProjectCard({ data }) {
       ? eCommerce
       : data.name === "Portfolio"
       ? portfolio
-      : quiz;
+      : quiz; //conditionally set the image source based on project name
+
   return (
     <div className="project--card">
       <div className="project--head">
