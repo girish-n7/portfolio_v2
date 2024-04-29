@@ -2,7 +2,7 @@ import api from "../data/contactAPI.json";
 
 export default function Contact() {
   return (
-    // basic inputs and form with POST method calling the personal conatctAPI
+    // basic inputs and form with POST method calling the personal contactAPI
 
     <form action={`${api[0].url}`} id="contact--form" method="POST">
       <div className="contact--container">
